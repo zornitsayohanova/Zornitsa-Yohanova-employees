@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        data-th-fragment="layout"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns="http://www.w3.org/1999/html"
+>
+<head>
+    <link th:href="@{/css/style.css}" rel="stylesheet"/>
+</head>
+<body>
+   <div class="c1 fx">
+       <form class="fx" th:action="@{/send-file}" method="post" enctype="multipart/form-data">
+           <label class="button b1 fx" for="file">
+               <img height="30px" src="file-icon.png">
+           </label>
+           <input hidden type="file" id="file" name="file">
+           <button class="button b2 fx">Изпращане</button>
+       </form>
+   </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    justify-content: center;
+    background-size: cover;
+    background: url("/1.jpeg") no-repeat bottom;
+    background-size: cover;
+}
+
+.button {
+    padding: 20px 30px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    box-shadow: -3px 5px 2px -3px #2e2e2e;
+    margin-right: 12px;
+}
+
+.b1 {
+    background: #3287a440;
+}
+
+.b2 {
+    background-color: #3287a4;
+}
+
+.b1:hover, .b2:hover {
+    box-shadow: -2px -2px 1px rgb(0, 57, 69), -2px -2px 4px rgba(255, 255, 255, .4),
+    2px 2px 2px rgba(255, 255, 255, .05), 2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+.c1 {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Calibri Light", sans-serif;
+}
+
+.c2 {
+    height: 500px;
+    background: #fff;
+    padding: 20px 80px;
+    border-radius: 30px;
+    box-shadow: -3px 5px 9px -3px #2e2e2e;
+}
+
+.c3 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+}
+
+.bold {
+    font-family: "Calibri", sans-serif;
+    font-weight: bold;
+}
+
+.gr {
+    color: #159d92;
+}
+
+p {
+    color: #285d6c;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cell {
+    width: 10rem;
+    text-align: center;
+}
+
+.fx {
+    display: flex;
+}
+
+.scrollbar {
+    scrollbar-color: #37899f white;
+    overflow-y: auto;
+    height: 300px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        data-th-fragment="layout"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns="http://www.w3.org/1999/html"
+>
+<head>
+    <link th:href="@{/css/style.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="c1 fx">
+    <div class="c2">
+
+        <p>Двойка служители</p>
+        <p class="bold gr" th:text="${pair}"></p>
+        <p>Брой дни съвместна работа</p>
+        <p class="bold gr" th:text="${pairDays}"></p>
+
+        <div class="c3 bold">
+            <p class="cell">Служител 1</p>
+            <p class="cell">Служител 2</p>
+            <p class="cell">ID на проект</p>
+            <p class="cell">Дни работа</p>
+        </div>
+
+        <div class="scrollbar">
+            <div th:each="project:${pairProjects}" class="c3">
+                <p class="cell" th:text="${project.firstEmployeeId}"></p>
+                <p class="cell" th:text="${project.secondEmployeeId}"></p>
+                <p class="cell" th:text="${project.projectId}"></p>
+                <p class="cell" th:text="${project.workTimeDays}"></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
